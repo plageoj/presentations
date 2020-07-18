@@ -3,8 +3,9 @@ marp: true
 paginate: true
 _paginate: false
 theme: gaia
-header: Twitter をやろう！
+header: Twitter をしよう！
 _header: ""
+title: Twitter をしよう！ - サマーインターの前にツヨツヨになっちゃおうの会
 footer: ぺんた ([@plageoj](https://twitter.com/plageoj))・広島大学工学部
 _footer: ""
 _class: lead
@@ -25,7 +26,7 @@ a {
 }
 </style>
 
-# Twitter をやろう！
+# Twitter をしよう！
 
 ぺんた [@plageoj](https://twitter.com/plageoj)
 
