@@ -5,7 +5,7 @@ _paginate: false
 theme: gaia
 header: Twitter をしよう！
 _header: ""
-title: Twitter をしよう！ - サマーインターの前にツヨツヨになっちゃおうの会
+title: Twitter をしよう！ - サマーインターンの前にツヨツヨになっちゃおうの会
 footer: ぺんた ([@plageoj](https://twitter.com/plageoj))・広島大学工学部
 _footer: ""
 _class: lead
