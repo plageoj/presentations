@@ -3,6 +3,10 @@
     font-family: sans-serif;
 }
 
+html {
+    margin-bottom: 2em;
+}
+
 h1 {
     border: solid;
     border-width: 0 0 1px 1em;
@@ -11,10 +15,6 @@ h1 {
 
 a {
     text-decoration: none;
-}
-
-dl {
-    margin-bottom: 2em;
 }
 
 dt {
@@ -33,9 +33,4 @@ dd {
     clear: right;
     margin-top: .7em;
     margin-right: 1em;
-}
-
-small {
-    display: inline-block;
-    margin-left: 1ex;
 }
