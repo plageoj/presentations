@@ -10,7 +10,10 @@ jobs:
 
       - name: Convert Markdown into HTML and PDF
         uses: KoharaKazuya/marp-cli-action@v1
-        
+ 
+      - name: Set update time
+        run: perl ./set-time.sh
+ 
       - name: Build index
         run: bash ./build-index.sh
 
