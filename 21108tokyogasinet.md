@@ -3,6 +3,7 @@ marp: true
 paginate: true
 _paginate: false
 theme: gaia
+title: 自己紹介 - 2021.01.08（TGI）
 footer: 菅原政行・広島大学工学部
 _footer: ""
 _class: lead

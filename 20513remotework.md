@@ -1,6 +1,5 @@
 ---
 marp: true
-title: 「ファイル名を指定して実行」で居室からお湯を沸かす
 header: 「ファイル名を指定して実行」で居室からお湯を沸かす
 footer: リモートワークハックLT Vol.2 / ぺんた @plageoj
 description:

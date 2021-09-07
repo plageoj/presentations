@@ -1,6 +1,7 @@
 ---
 marp: true
 footer: ポケコンで無線通信！/ 細かすぎて伝わらない昭和のエンジニア昔語り講演会！ #ALGYAN / ぺんた @plageoj
+title: ポケコンで無線通信！/ 細かすぎて伝わらない昭和のエンジニア昔語り講演会！ #ALGYAN
 _footer: ""
 paginate: true
 _paginate: false

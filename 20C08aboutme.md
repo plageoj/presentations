@@ -3,6 +3,7 @@ marp: true
 paginate: true
 _paginate: false
 theme: gaia
+title: 自己紹介 - 2020.12.08
 footer: 菅原政行 (@plageoj)・広島大学工学部・Team IshiHara 代表
 _footer: ""
 _class: lead
