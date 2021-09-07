@@ -10,6 +10,10 @@ cat << HTML > index.html
 </head>
 <body>
 <h1>PRESENTATIONS ARCHIVE</h1>
+<p>
+  <img src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
+    alt="Index build status">
+</p>
 <dl>
 HTML
 

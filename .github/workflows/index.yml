@@ -12,7 +12,7 @@ jobs:
         uses: KoharaKazuya/marp-cli-action@v1
  
       - name: Set update time
-        run: perl ./set-time.
+        run: perl ./set-time.pl
  
       - name: Build index
         run: bash ./build-index.sh
