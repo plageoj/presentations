@@ -7,6 +7,7 @@ cat << HTML > index.html
   <meta charset="utf-8">
   <title>PRESENTATIONS</title>
   <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
 <h1>PRESENTATIONS ARCHIVE</h1>
