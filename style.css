@@ -54,6 +54,28 @@ li:hover {
     background-color: #2d333b;
 }
 
+#profile {
+    padding-left: .5rem;
+    line-height: 3.5rem;
+    background: #2d333b;
+}
+
+#profile a img {
+    border-radius: 100%;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: .3rem;
+}
+
+#profile>img {
+    height: 1.3rem;
+    margin: 1.2rem 1rem 0 0;
+}
+
+#profile:before {
+    content: none;
+}
+
 li>a {
     flex-grow: 1;
 }

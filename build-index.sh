@@ -1,6 +1,6 @@
 #! /bin/bash
 
-updated_at=`date "+%Y/%m/%d %H:%M"`
+updated_at=`TZ="Asia/Tokyo" date "+%Y/%m/%d %H:%M"`
 
 cat << HTML > index.html
 <!DOCTYPE html>
