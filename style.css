@@ -17,4 +17,47 @@ h1 {
 
 a {
     text-decoration: none;
+    color: #adbac7;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #539bf5;
+}
+
+ul {
+    padding: 0;
+    border: solid 1px #37464f;
+    border-radius: 0.5rem;
+    max-width: 60rem;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    line-height: 3rem;
+    border-bottom: 1px solid #37464f;
+    display: flex;
+}
+
+li:before {
+    content: url(md.svg);
+    margin-right: .5rem;
+    margin-left: 1rem;
+}
+
+li:last-of-type {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #2d333b;
+}
+
+li>a {
+    flex-grow: 1;
+}
+
+span {
+    margin-right: 1rem;
 }

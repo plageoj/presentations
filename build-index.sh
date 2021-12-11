@@ -1,5 +1,7 @@
 #! /bin/bash
 
+updated_at=`date "+%Y/%m/%d %H:%M"`
+
 cat << HTML > index.html
 <!DOCTYPE html>
 <html lang="ja-JP">
@@ -12,6 +14,16 @@ cat << HTML > index.html
 <body>
 <h1>PRESENTATIONS ARCHIVE</h1>
 <ul>
+  <li id="profile">
+    <a href="https://github.com/plageoj" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/10688301?s=48&v=4" alt="">
+      <b>plageoj</b> updated this page at $updated_at
+    </a>
+
+
+    <img id="build-status" src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
+      alt="Index build status">
+  </li>
 HTML
 
 IFS=$'\n'
@@ -23,10 +35,10 @@ for file in `ls -r *.md | sed -e "s/.md//g"`; do
     echo -e "$file:\t[$title]"
     cat << HTML >> index.html
   <li>
-    <a href="./$file.html">$title</a>
+    <a href="./$file.html" target="_blank">$title</a>
     <span>
-      [<a href="./$file.md">markdown</a>]
-      [<a href="./$file.pdf">PDF</a>]
+      [<a href="./$file.md" target="_blank">markdown</a>]
+      [<a href="./$file.pdf" target="_blank">PDF</a>]
     </span>
   </li>
 HTML
@@ -35,10 +47,6 @@ done
 
 echo << HTML >> index.html
 </ul>
-<p>
-  <img src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
-    alt="Index build status">
-</p>
 </body>
 </html> 
 HTML
