@@ -5,6 +5,8 @@
 
 html {
     margin-bottom: 2em;
+    background: #22272e;
+    color: #adbac7;
 }
 
 h1 {
@@ -15,22 +17,4 @@ h1 {
 
 a {
     text-decoration: none;
-}
-
-dt {
-    float: left;
-    margin: .7em 0 0 2em;
-    clear: both;
-    border-bottom: 1px solid;
-}
-
-dt:before {
-    content: "■";
-}
-
-dd {
-    float: right;
-    clear: right;
-    margin-top: .7em;
-    margin-right: 1em;
 }

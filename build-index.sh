@@ -11,11 +11,7 @@ cat << HTML > index.html
 </head>
 <body>
 <h1>PRESENTATIONS ARCHIVE</h1>
-<p>
-  <img src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
-    alt="Index build status">
-</p>
-<dl>
+<ul>
 HTML
 
 IFS=$'\n'
@@ -26,16 +22,23 @@ for file in `ls -r *.md | sed -e "s/.md//g"`; do
   if [ "x$title" != "x" ]; then
     echo -e "$file:\t[$title]"
     cat << HTML >> index.html
-  <dt>
+  <li>
     <a href="./$file.html">$title</a>
-  </dt>
-  <dd>
-    [<a href="./$file.md">markdown</a>]
-    [<a href="./$file.pdf">PDF</a>]
-  </dd>
+    <span>
+      [<a href="./$file.md">markdown</a>]
+      [<a href="./$file.pdf">PDF</a>]
+    </span>
+  </li>
 HTML
   fi
 done
 
-echo "</dl></body></html>" >> index.html
-
+echo << HTML >> index.html
+</ul>
+<p>
+  <img src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
+    alt="Index build status">
+</p>
+</body>
+</html> 
+HTML

@@ -8,9 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set update time
-        run: perl ./set-time.pl
- 
       - name: Convert Markdown into HTML and PDF
         uses: KoharaKazuya/marp-cli-action@v1
  
