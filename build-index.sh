@@ -12,16 +12,16 @@ cat << HTML > index.html
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<h1>PRESENTATIONS ARCHIVE</h1>
+<h1>プレゼンテーションアーカイブ</h1>
 <ul>
   <li id="profile">
-    <a href="https://github.com/plageoj" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/10688301?s=48&v=4" alt="">
-      <b>plageoj</b> updated this page at $updated_at
+    <a href="https://github.com/${GITHUB_ACTOR}" target="_blank">
+      <img src="https://github.com/${GITHUB_ACTOR}.png" alt="">
+      <b>${GITHUB_ACTOR}</b> updated this page at $updated_at
     </a>
 
 
-    <img id="build-status" src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
+    <img id="build-status" src="https://github.com/${GITHUB_REPOSITORY}/actions/workflows/index.yml/badge.svg?branch=master"
       alt="Index build status">
   </li>
 HTML
@@ -48,5 +48,5 @@ done
 echo << HTML >> index.html
 </ul>
 </body>
-</html> 
+</html>
 HTML
