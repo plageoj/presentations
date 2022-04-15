@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Marp + GitHub Actions で軽快スライド作り - cluster 広島LT大会 #4
+title: Marp + GitHub Actions で軽快スライド作り
 footer: Marp + GitHub Actions で軽快スライド作り - cluster 広島LT大会 #4
 _footer: ""
 theme: gaia
@@ -26,9 +26,15 @@ p {
 }
 img {
     vertical-align: middle;
+    display: block;
+    margin: auto;
 }
 a {
     text-decoration: none;
+}
+code {
+    padding-right: 1ex;
+    padding-left: 1ex;
 }
 </style>
 
@@ -91,12 +97,12 @@ JR 向洋駅南口すぐ！
 
 # [Marp](https://marp.app/) ?
 
-![height:60px](./md.svg) Markdown という書き方で、スライドを作成できるツールです。
+Markdown という書き方で、スライドを作成できるツールです。
 
 ```markdown
 ---
 marp: true
-title: プレゼンテーションのタイトル
+title : プレゼンテーションのタイトル
 ---
 # これがスライドのタイトル
 そして本文を書きます。[リンク](https://marp.app/) や *斜体*、**太字** も使えます。
@@ -122,7 +128,7 @@ title: プレゼンテーションのタイトル
 
 → **テンプレートをご用意しました！**
 
-　 次のリンクからコピーしてそのままファイルを追加するだけで、
+　 GitHub のアカウントをお持ちの方なら、次のリンクから
 　 すぐにスライド作成をできるようにしてあります。
 
 [plageoj/presentation-template](https://github.com/plageoj/presentation-template)
@@ -142,10 +148,74 @@ title: プレゼンテーションのタイトル
 
 # オンラインで編集
 
-オンライン上で編集できます
+ブラウザ上で編集できます
+
+![h:400](https://user-images.githubusercontent.com/10688301/163552518-08e1d667-deeb-41ff-97ac-a9c2c52f71de.png)
 
 ---
 
 # 拡張機能を使う
 
-`Marp` 拡張機能を有効にしておくと、プレビューを表示できます
+`Marp` 拡張機能を有効にしておくと、プレビューが出ます
+
+![h:400 float:left](https://user-images.githubusercontent.com/10688301/163552333-da379ede-3e31-4348-8ee8-dff11591c539.png)
+
+---
+
+# プレゼン作成のストレスがなくなります
+
+- レイアウト不要
+- それなりの見た目
+- コピペ簡単
+- 複数ファイルをまたいだ検索もできる
+
+
+ここまでは Marp のご紹介でした。
+続いて、作ったスライドの公開を自動化しましょう！
+
+---
+
+# 公開の自動化
+
+テンプレートには最初から自動化の仕組みが入っています。
+
+![h:400](https://user-images.githubusercontent.com/10688301/163553828-59b2513d-9ea2-4075-83cc-9b4cd841adcf.png)
+
+---
+
+# 公開の自動化
+
+スライドの中に次のように書くことで、公開サイトに表示されます。
+
+ルール： 冒頭の `marp: true` の次の行に、
+```
+title:
+```
+につづけてスライドのタイトルを入力してください。
+
+例：
+
+```yaml
+title: - cluster 広島LT大会 #4
+```
+
+---
+
+# 公開の自動化
+
+ファイルを更新したら、変更内容を入れて「コミット」（チェックマーク）しましょう。数分で、先ほどのサイトが自動的に更新されます。
+
+![](https://user-images.githubusercontent.com/10688301/163554227-2963ab9a-3c05-4ab3-91d7-1fdcaadfc95f.png)
+
+---
+
+# スライド編集もオンライン化して快適に！
+
+詳しい紹介記事：
+（あとで書く）
+
+テンプレート：
+[plageoj/presentation-template](https://github.com/plageoj/presentation-template)
+
+実際の公開サイト：
+[plageoj.github.io/presentations](https://plageoj.github.io/presentations/)
