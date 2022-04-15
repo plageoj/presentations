@@ -12,6 +12,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 <style>
 *{
     font-feature-settings: "palt";
+    font-family: "Noto Sans JP", sans-serif;
 }
 h1 {
     font-size: 1.3em;
