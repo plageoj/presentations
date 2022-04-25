@@ -1,5 +1,7 @@
 #! /bin/bash
 
+updated_at=`TZ="Asia/Tokyo" date "+%Y/%m/%d %H:%M"`
+
 cat << HTML > index.html
 <!DOCTYPE html>
 <html lang="ja-JP">
@@ -7,14 +9,21 @@ cat << HTML > index.html
   <meta charset="utf-8">
   <title>PRESENTATIONS</title>
   <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<h1>PRESENTATIONS ARCHIVE</h1>
-<p>
-  <img src="https://github.com/plageoj/presentations/actions/workflows/index.yml/badge.svg?branch=master"
-    alt="Index build status">
-</p>
-<dl>
+<h1>プレゼンテーションアーカイブ</h1>
+<ul>
+  <li id="profile">
+    <a href="https://github.com/${GITHUB_ACTOR}" target="_blank">
+      <img src="https://github.com/${GITHUB_ACTOR}.png" alt="">
+      <b>${GITHUB_ACTOR}</b> updated this page at $updated_at
+    </a>
+
+
+    <img id="build-status" src="https://github.com/${GITHUB_REPOSITORY}/actions/workflows/index.yml/badge.svg?branch=master"
+      alt="Index build status">
+  </li>
 HTML
 
 IFS=$'\n'
@@ -25,16 +34,19 @@ for file in `ls -r *.md | sed -e "s/.md//g"`; do
   if [ "x$title" != "x" ]; then
     echo -e "$file:\t[$title]"
     cat << HTML >> index.html
-  <dt>
-    <a href="./$file.html">$title</a>
-  </dt>
-  <dd>
-    [<a href="./$file.md">markdown</a>]
-    [<a href="./$file.pdf">PDF</a>]
-  </dd>
+  <li>
+    <a href="./$file.html" target="_blank">$title</a>
+    <span>
+      [<a href="./$file.md" target="_blank">markdown</a>]
+      [<a href="./$file.pdf" target="_blank">PDF</a>]
+    </span>
+  </li>
 HTML
   fi
 done
 
-echo "</dl></body></html>" >> index.html
-
+echo << HTML >> index.html
+</ul>
+</body>
+</html>
+HTML
