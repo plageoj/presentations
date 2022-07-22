@@ -13,7 +13,7 @@ _header: ""
 
 <style>
 * {
-    font-family: "Yu Gothic UI";
+    font-family: "Yu Gothic UI" Osaka sans-serif;
 }
 
 img {
@@ -153,7 +153,7 @@ _header: ''
 _footer: ''
 -->
 
-![bg](https://lh5.googleusercontent.com/xZhjKlXrKGR9XXDGOpe4debxzwUHkAUTkNrhyx8jnuZW7ae1KGV4L-PFywUDqUJ9Gp1L50NmhSs55ixQu6-geQlmxTz1fKz2QAI4k9HGl52vwggTjQXo_Y5Kjw6ASKCs3g=w1280)
+![bg](https://cdnspacemarket.com/uploads/attachments/923385/image.jpg?width=780&height=439&fit=crop&quality=75&format=jpg&dpr=2&auto=webp)
 
 ---
 
