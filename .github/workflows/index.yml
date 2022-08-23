@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Convert Markdown into HTML and PDF
-        uses: KoharaKazuya/marp-cli-action@v2
+        uses: KoharaKazuya/marp-cli-action@latest
 
       - name: Build index
         run: bash ./build-index.sh
