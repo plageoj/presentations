@@ -10,6 +10,8 @@ jobs:
 
       - name: Convert Markdown into HTML and PDF
         uses: hiono/marp-cli-action@v2
+        with:
+          generate-pptx: false
 
       - name: Build index
         run: bash ./build-index.sh
