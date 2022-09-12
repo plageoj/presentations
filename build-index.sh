@@ -31,8 +31,8 @@ IFS=$'\n'
 for file in `ls -r *.md | sed -e "s/.md//g"`; do
   title=`grep "title:" $file.md | cut -f2 -d":" | xargs`
 
-  if [ "x$title" != "x" ]; then
-    echo -e "$file:\t[$title]"
+  if ! grep -q "private:" $file.md ; then
+    echo -e "$file\t\t$title"
     cat << HTML >> index.html
   <li>
     <a href="./$file.html" target="_blank">$title</a>
@@ -42,6 +42,8 @@ for file in `ls -r *.md | sed -e "s/.md//g"`; do
     </span>
   </li>
 HTML
+  else
+    echo -e "$file*\t\t$title"
   fi
 done
 

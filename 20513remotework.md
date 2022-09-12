@@ -1,6 +1,7 @@
 ---
 marp: true
 header: 「ファイル名を指定して実行」で居室からお湯を沸かす
+title: 「ファイル名を指定して実行」で居室からお湯を沸かす
 footer: リモートワークハックLT Vol.2 / ぺんた @plageoj
 description:
 theme: gaia
@@ -8,6 +9,7 @@ _class: lead
 paginate: true
 _paginate: false
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+private: true
 ---
 
 # 「ファイル名を指定して実行」で
