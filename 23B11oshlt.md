@@ -30,7 +30,7 @@ a {
 
 菅原 政行
 
-<small>株式会社Faber Company / 合同会社Team IshiHara</small>
+株式会社Faber Company / 合同会社Team IshiHara
 
 ---
 
@@ -39,8 +39,6 @@ a {
 ![](https://www.fabercompany.co.jp/_sys/wp-content/uploads/logo.png)
 
 4月から正社員になりました。デジタルマーケティングの会社の開発部門で働いています。
-
-GitHub Copilot 導入は鋭意稟議中（早くやってくれ……）
 
 ---
 
@@ -52,6 +50,7 @@ GitHub Copilot 導入は鋭意稟議中（早くやってくれ……）
 
 ## 我々は日本語の方が精度が高い
 
+この問題を解決する、短い呪文集です。
 ご紹介する呪文集は全て GPT-3.5 Turbo で使えます。
 
 ---
@@ -86,7 +85,7 @@ prompt in: ja
 
 ---
 
-## 翻訳サービス等を使って英語で訊く……
+## 英語で訊く……
 
 ![w:900](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/116845/28ff84e2-24a4-32b5-72ef-843c6b394a88.png)
 
@@ -110,7 +109,6 @@ w/o expl.
 
 ![w:900](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/116845/7784fba7-3340-9abb-0888-fc6a6ec3591f.png)
 
-
 ---
 
 # ざっくりまとめ
@@ -120,7 +118,7 @@ w/o expl.
 - ただし前置詞は適切に使う必要あり
 
 - `lang:` では全体が翻訳され、 `in:` では一部だけ翻訳される傾向がある（なぜ？）
-    - `in: flask` `in: laravel` なども使える。便利
+    - これを活かして `in: flask` `in: laravel` なども使える。便利
 
 ---
 
@@ -131,6 +129,7 @@ w/o expl.
 | `prompt for: <話題>` | プロンプトを生成（そのあと調整できる） |
 | `execute it` | プロンプトを解釈 |
 | `(prompt) in: ja` | (プロンプトを)日本語化 |
+| `in: <フレームワーク>` | コードを特定言語・FW向けに書き換える |
 | `lang: ja` | 出力を日本語化 |
 | `w/o expl.` | 説明を抑制する |
-| `more` | 続きを出力させる |
+| `more (on <内容>)` | 続きを出力させる / 内容について詳しく |
