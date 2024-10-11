@@ -10,6 +10,12 @@ cat << HTML > index.html
   <title>PRESENTATIONS</title>
   <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" id="mierucaOptimizejs">
+    window.__optimizeid = window.__optimizeid || [];__optimizeid.push([1294360604]);
+    (function () {var fjs = document.createElement('script');fjs.type = 'text/javascript';
+    fjs.async = true;fjs.id = "fjssync";var timestamp = new Date;fjs.src = 'https://dev.opt.mieru-ca.com/service/js/mieruca-optimize-dev.js?v=' + timestamp.getTime();
+    var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(fjs, x);})();
+  </script>
 </head>
 <body>
 <h1>プレゼンテーションアーカイブ</h1>
